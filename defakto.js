@@ -8,7 +8,7 @@ var count = 12*60/intervalInMinutes;
 var center = [dial.attr('cx'), dial.attr('cy')];
 for (var i=0; i<count; i++){
     var m = i * intervalInMinutes;
-    var length = !(m%60) ? 60 : !(m%15) ? 40 : 20;
+    var length = !(m%60) ? 67 : !(m%15) ? 34 : 16;
     var tick = paper.path('M' + center.join(',') + 'v' + length)
         .attr({
             stroke: nearlyWhite,
